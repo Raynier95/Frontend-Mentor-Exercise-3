@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+.container{
+    margin: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    max-width: 335px;
+    background-color: #fff;
+    border-radius: 5px 5px;
+}
+.container__top{
+    padding: 1.3rem;
+    height: 290px;
+}
+.container__left,
+.container__right{
+    padding: 1.3rem;
+    height: 230px;
+}
+.container__left{
+    background-color: hsl(179, 62%, 43%);
+}
+.container__right{
+    background-color: hsl(179 62% 43% / .8 );
+    border-radius: 0 0 5px 5px;
+}
+.list{
+    padding-left: 0;
+    list-style: none;
+}
+.text-cyan{
+    color: hsl(179, 62%, 43%);
+}
+.text-lime{
+    font-size: 1.2rem;
+    color: hsl(71, 73%, 54%);
+}
+.text-grey{
+    line-height: 1.4;
+    color: #222;
+}
+.text-extra-big{
+    font-size: 2rem;
+}
+.text-transparent{
+    color: hsl(0  0% 100% / .5);
+}
+.button{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.1);
+    color: white;
+}
+@media screen and (min-width: 1000px) {
+    .container{
+        max-width: 100%;
+        position: relative;
+        width: 650px;
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 3rem;
+        background-color: #fff;
+        border-radius: 5px 5px 0 0;
+    }
+    .container__top{
+        height: 225px;
+        padding: 1em 2em;
+    }
+    .container__left,
+    .container__right{
+        position: absolute;
+        top: 225px;
+        width: 50%;
+        height: 250px;
+        padding: 1em 2em;
+    }
+    .container__left{
+        left: 0;
+        background-color: hsl(179, 62%, 43%);
+        border-radius: 0 0 0 5px;
+    }
+    .container__right{
+        right: 0;
+        background-color: hsl(179 62% 43% / .8 );
+        border-radius: 0 0 5px 0;
+    }
+    .text-cyan{
+        color: hsl(179, 62%, 43%);
+    }
+    .text-lime{
+        color: hsl(71, 73%, 54%);
+    }
+    .text-grey{
+        color: hsl(0, 0%, 71%);
+    }
+    .text-transparent{
+        color: hsl(0  0% 100% / .5);
+    }
+    .text-extra-big{
+        font-size: 2.5rem;
+    }
+    .text-big{
+        font-size: 2rem;
+    }
+    .text-medium{
+        font-size: 1.5rem;
+    }
+    .text-small{
+        font-size: 1rem;
+    }
+    .list{
+        padding-left: 0;
+        list-style: none;
+        line-height: 1.2;
+        font-weight: 200;
+    }
+    .button{
+        cursor: pointer;
+    }
+}
